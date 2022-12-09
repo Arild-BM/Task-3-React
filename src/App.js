@@ -21,7 +21,7 @@ export default function App() {
       <button onClick={() => setCounter((prevValue) => prevValue * prevValue)} className="square">Square</button>
       <button onClick={() => setCounter((prevValue) => Math.round(Math.sqrt(prevValue)) ? Math.round(Math.sqrt(prevValue)) : 0)} className="root">Root</button>
       <br />
-      <button onClick={() => setCounter(() => 0)} className="reset">Reset</button>
+      <button onClick={() => setCounter(0)} className="reset">Reset</button>
     </div>
   );
 }
